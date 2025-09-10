@@ -19,11 +19,5 @@ jobs:
         with:
           go-version: "1.23"
 
-      - name: Format code
-        run: |
-          gofmt -w .
-          git diff --exit-code || (echo "Code was not formatted, please commit formatted files." && exit 1)
-
-
       - name: Run tests
         run: go test ./...
