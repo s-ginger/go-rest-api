@@ -7,6 +7,7 @@ require golang.org/x/text v0.27.0
 require (
 	github.com/BurntSushi/toml v1.5.0 // indirect
 	github.com/go-chi/chi/v5 v5.2.2 // indirect
+	github.com/golang-jwt/jwt/v5 v5.3.0 // indirect
 	github.com/ilyakaznacheev/cleanenv v1.5.0 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect

@@ -1,13 +1,15 @@
 package main
 
 import (
+	
 	"log/slog"
 	"net/http"
 	"os"
 	"proj4/internal/config"
-	"proj4/internal/storage/sqlite"
-	"proj4/internal/models"
 	"proj4/internal/http_server/middleware/logger"
+	"proj4/internal/models"
+	"proj4/internal/storage/sqlite"
+	"proj4/internal/http_server/auth"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 )
@@ -46,6 +48,8 @@ func main() {
 	router.Get("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("welcome"))
 	})
+
+	router.Post("/register", auth.Register)
 
 
 	// TODO run

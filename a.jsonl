@@ -1,0 +1,37 @@
+
+// register
+{
+    "username" : "Alex",
+    "password" : "",
+} 
+
+//=> 
+{
+    "ok": true / false,
+    "token" : ""
+}
+
+
+// login 
+{
+    "username" : "Alex",
+    "password" : "",
+}
+// =>
+{
+    "ok": true / false,
+    "token" : ""
+}
+
+// auth 
+{
+    "token" : ""
+}
+// =>
+{
+    "ok": true / false,
+    "username" : "Alex",
+    "password" : "",
+}
+
+
